@@ -1,0 +1,212 @@
+:root {
+  --primary: #2196F3;
+  --danger: #f44336;
+  --bg: #ffffff;
+  --text: #333333;
+  --border: #e0e0e0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  width: 300px;
+  padding: 16px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h3, h4 {
+  margin: 0 0 16px 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+button:hover {
+  background: #1976D2;
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  flex: 1;
+}
+
+.secondary-btn:hover {
+  background: rgba(33, 150, 243, 0.1);
+  box-shadow: none;
+}
+
+#shortcutList {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+}
+
+#shortcutList li {
+  padding: 12px;
+  border-radius: 6px;
+  background: #f8f9fa;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.shortcut-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  min-width: 0;
+}
+
+.shortcut-key {
+  color: var(--primary);
+  font-weight: 500;
+  background: rgba(33, 150, 243, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.shortcut-arrow {
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.shortcut-arrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.shortcut-value {
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.delete-btn {
+  color: var(--danger);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.delete-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.delete-btn:hover {
+  background: rgba(244, 67, 54, 0.1);
+}
+
+.saved-div{
+    margin-top: 2rem;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1976D2;
+}
+
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #90CAF9;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header h3 {
+  margin: 0;
+}
+
+.github-btn {
+  color: var(--text);
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.github-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--primary);
+}
