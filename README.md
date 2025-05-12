@@ -1,8 +1,6 @@
 # Shortcut Dictionary Chrome Extension
 
 A Chrome extension that helps you create text shortcuts for frequently used phrases, boilerplates, or templates. Type your shortcut and it automatically expands to your pre-defined text.
-![Screenshot 2025-05-12 222440](https://github.com/user-attachments/assets/6da125db-27ca-4308-887d-aa198d72db4d)
-
 ## Features
 
 - **Quick Text Expansion**: Convert short text triggers into longer snippets
